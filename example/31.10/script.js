@@ -44,15 +44,14 @@
 //let total = (a + b) * c - d / e;
  //console.log(total);
 
- //let a = 45;
- //let b = 40;
- //let c = 42;
- //let z = 4;
- //let x = 47;
- //let a = 45;
+ let a = 45;
+ let b = 40;
+ let c = 42;
+ let z = 4;
+ let x = 47;
 
- //let total = ((a*b)/c)/(z-3);
-//console.log(total);
+ let total = ((a*b)/c)/(z-3);
+console.log(total % 2);
 
 //let a = 45;
 //let b = 40;
