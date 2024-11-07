@@ -1,4 +1,4 @@
-var birthYea = prompt("How old are you? ");
+var birthYea = prompt("Zhasyn qanshada? ");
 
 if (birthYea >= 18){ 
     alert("Sizdin jasynyz " + 18 + "den asqan");
