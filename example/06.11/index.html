@@ -3,76 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Burger</title>
 </head>
 <body>
     <script>
     let order =""
+    let total = 0;
 
-        var burger = prompt("Burger tandanyz" + "\n" + "A)Tauyqpen" + "\n" + "B)Etpen" + "\n" + "C)Etsiz");
+        var burger = prompt("Burger tandanyz" + "\n" + "A)Tauyqpen 500 tg" + "\n" + "B)Etpen 700 tg" + "\n" + "C)Etsiz 300 tg");
 
         switch (burger){
             case "A":
                  order += "\n Tauyqpen"
+                 total += 500
                 break;
             case "B":
                  order += "\n Etpen"
+                 total += 700
                 break;
             case "C":
                 order += "\n Etsiz"
+                total += 300
                 break;
             default:
                 alert("Qate");
         }
        
-        var burger = prompt("Susyn tandanyz" + "\n" + "A)Cola" + "\n" + "B)Sprite" + "\n" + "C)Fanta");
+        var burger = prompt("Susyn tandanyz" + "\n" + "A)Cola 300 tg" + "\n" + "B)Sprite 350 tg" + "\n" + "C)Fanta 400 tg");
 
           switch (burger){
             case "A":
                  order += "\n Cola"
+                 total += 300
                 break;
             case "B":
                  order += "\n Sprite"
+                 total += 350
                 break;
             case "C":
                 order += "\n Fanta"
+                total += 400
                 break;
             default:
                 alert("Qate");
         }
 
-        var burger = prompt("Fri tandanyz" + "\n" + "A)Small" + "\n" + "B)Medium" + "\n" + "C)Large");
+        var burger = prompt("Fri tandanyz" + "\n" + "A)Small 200tg" + "\n" + "B)Medium 300tg" + "\n" + "C)Large 350tg");
 
         switch (burger){
             case "A":
                  order += "\n Small"
+                 total += 200
                 break;
             case "B":
                  order += "\n Medium"
+                 total += 300
                 break;
             case "C":
                 order += "\n Large"
+                total += 350
                 break;
             default:
                 alert("Qate");
         }
-        var burger = prompt("Sauce tandanyz" + "\n" + "A)Cheese" + "\n" + "B)Ketchup" + "\n" + "C)Moenez");
+        var burger = prompt("Sauce tandanyz" + "\n" + "A)Cheese 200 tg" + "\n" + "B)Ketchup 150 tg" + "\n" + "C)Moenez 100 tg");
 
         switch (burger){
             case "A":
                  order += "\n Cheese"
+                 total += 200
                 break;
             case "B":
-                 order += "\n Ketchup"
+                 order += "\n Ketchup "
+                 total += 150
                 break;
             case "C":
                 order += "\n Moenez"
+                total += 100
                 break;
             default:
                 alert("Qate");
         }
 
-        alert(order)
+        alert(order + "\n" + "Summa: " + total + " tenge" + "\n" + "Klient aty - joni: ")
+
         
 
     </script>
