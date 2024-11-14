@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = 0;
+        while(num < 30){
+            num++;
+            if(num % 2 ===0){
+                continue;
+            }
+            console.log(num);
+        }
+
+        let score = 6;
+         
+         
+         do{
+            score--
+           var guestion = +prompt("Qazaq handyqy qashan quryldy?");
+         }while(guestion < 1465);
+
+         do{
+            score--
+           var guestion = +prompt("adam denesinde qansha suiek bar?");
+         }while(guestion < 260);
+
+         do{
+            score--
+           var guestion = +prompt("Nurilanyn qansha balasy bar?");
+         }while(guestion < 3);
+         
+               alert("Durys " + score);
+
+        let start = +prompt("Bastapqy sandy engiziniz");
+        let end = +prompt("songy sandy engiziniz");
+
+        let num1 = 1;
+        let num2 =2;
+
+        let i = start;
+
+        do{
+            if(i % 4 == 0){
+                num1 *= i;
+            }
+            if(i % 7 ==0){
+                num2 *= i;
+            }
+            i++;
+        }while (i <= end);
+
+        alert("4 ke qaldyqsyz bolinetin sandardyn kobeitindisi" + num1);
+        alert("7 ge qaldyqsyz bolinetin sandardyn kobeitindisi" + num1);
+
+        </script>
+</body>
+</html>
