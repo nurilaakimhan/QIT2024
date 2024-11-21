@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //let num1 = +prompt("Aqsha ainaldyru");
+        //let currence = prompt("dollar/tenge");
+
+       // function convertMoney(a, b){
+        //    if(b == "dollar" || b == "Dollar"){
+       //        return a * 495;
+       //     }else if(b == "tenge" || b == "Tenge"){
+        //        return a/495;
+       //    }
+       //}
+       // alert(convertMoney(num1, currence));
+
+       //const kosu = (a, b) => a + b;
+       //console.log(kosu(4, 6));
+
+       // const findLength = (text) => text.length;
+       //consol.log(findLength("hello, world"));
+
+    
+    
+    const myBank = () =>{
+        let result = 0;
+        let money;
+    while(money != 0){
+        money = +prompt('Aqsha');
+    if(money == 0)break;     
+    let currency = prompt('USD/EUR/KZT');
+    if (currency == 'EUR'){
+       result += money;
+    }else if (currency == 'USD'){
+    result += money * 0.85;
+    }else if (currency == 'KZT'){
+    result += money * 0.002;
+    }
+}
+return result;
+};
+alert(myBank());
+    
+    </script>
+</body>
+</html>
