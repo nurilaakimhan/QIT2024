@@ -34,10 +34,32 @@
         //}
         // findNumber();
 
-        let san1 = +prompt("San engiz");
+        //let san1 = +prompt("San engiz");
        
 
+     let result = 0; 
+     let maxGrade = 0;
+     let students = 0;
 
+    while (true) {
+    let studentName = prompt('Student atyn zhaz');
+    if (studentName == 'stop') break;
+    students++;
+
+    let grade = +prompt(`${studentName} бағасын жаз`);
+    if (grade > maxGrade) maxGrade = grade; 
+
+    result += grade;
+  }
+
+  alert(
+    `Students number is ${students} \n The greatest grade is ${maxGrade}\nAverage grade is ${
+      result / students
+    }`
+  );
+ 
+
+ studentsGrade();
 
     </script>
 </body>
