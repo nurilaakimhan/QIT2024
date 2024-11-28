@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+   // const fillArray = () => {
+    //   let array = [];
+
+    //   while(true){
+    //       let thing = prompt("Zat engiz");
+    //       if (thing === "stop") break;
+    //        if (!isNaN(Number(thing))){
+    //           array.push(Number(thing));
+    //       }else{
+    //            array.push(thing);
+    //       }
+    //   }
+    //    return array;
+    //};
+    // console.log(fillArray());
+
+   // let array = [1,2,3,4,5,6];
+    //for(let element of array){
+    //    console.log(element);
+    //}
+
+    //let array = [1,2,3,4,5,6];
+
+    //array.forEach(function(element){
+    //    console.log(element);
+    //})
+
+   // let array = [1,2,3,4,5,6];
+   //let result = [];
+
+   // for (let element of array){
+    //    result.push(element * 5);
+   // }
+   // console.log(array);
+   // console.log(result);
+
+   //let array = [1,2,3,4,5,6];
+   //let doubled = array.map((element) => element * 2);
+   //let squared = array.map((element) => element * element);//1 parametr bolsa Elemenke jaqwa kereke emes
+   //console.log(`Eki eselengen sandar: ${doubled}`);
+   //console.log(`Kvadrattalgan sandar: ${squared}`);
+   
+
+   //let array = [1,2,3,4,5,6];
+   //let evens = array.filter(element => element % 2 === 0);
+   //let odds = array.filter(element => element % 2 !== 0);
+
+   //console.log(`Jup sandar: ${evens}`);
+   //console.log(`Taq sandar: ${odds}`);
+
+   //let array = fillArray();
+   //let terisSan = array.filter(element => element <= 0);
+   //let onSan = array.filter(element => element >= 0);
+
+   //console.log(`Teris sandar: ${terisSan}`);
+   //console.log(`On sandar: ${onSan}`);
+
+
+   const fillArray = (name) => {
+       let array = [];
+
+       while(true){
+           let thing = prompt(`${name}`);
+           if (thing === "stop") break;
+            if (!isNaN(Number(thing))){
+               array.push(Number(thing));
+           }else{
+                array.push(thing);
+           }
+       }
+        return array;
+    };
+
+    //let priceList = fillArray("Baga");
+   //let final = priceList.filter(element => element <= 10000);
+
+  // console.log(`Tauarlar: ${final}`);
+   //console.log(`Tauar sany: ${final.length}`);
+
+   //let nameList = fillArray("Tauar atyn");
+   //let search = prompt("Search...");
+
+   //let final = nameList.filter(element => element.toLowerCase().includes(search));
+
+
+   //console.log(`Tauarlar: ${final}`);
+   //console.log(`Tauar sany: ${final.length}`);
+
+   //function sumOfNumbers(){
+    //let numbers = fillArray('San');
+    //let total = numbers.reduce((result, element) => result + element, 0);
+   // console.log(`Sandar qosyndysy: ${total}`);
+   //}
+   //sumOfNumbers();
+
+    let numbers = fillArray('San');
+
+    function sumOfNumbers(array){
+    let total = array.reduce((result, element) => result + element, 0);
+    console.log(`Sandar qosyndysy: ${total}`);
+    }
+
+    function multiplicationOfNumbers(array){
+    let total = array.reduce((result, element) => result * element, 1);
+    console.log(`Sandar kobeitindisine: ${total}`);
+    }
+    sumOfNumbers(numbers);
+    multiplicationOfNumbers(numbers);
+   </script>
+</body>
+</html>
