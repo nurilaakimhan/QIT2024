@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //      const fillArray = (name) => {
+    //    let array = [];
+
+    //    while(true){
+    //        let thing = prompt(`${name}`);
+    //        if (thing === "stop") break;
+    //         if (!isNaN(Number(thing))){
+    //            array.push(Number(thing));
+    //        }else{
+    //             array.push(thing);
+    //        }
+    //    }
+    //     return array;
+    // };
+
+    
+    //     let array = fillArray();
+    //     let evens = array.filter(element => element <= 50);
+    //     let doubled = array.map((element) => element * 2);
+    //     console.log(`50 den kishi sandar: ${evens}`);
+    //     console.log(`2 ge kobeitilgen sandar : ${doubled}`);
+
+  
+    //     let array = fillArray();
+    //     let doubled = array.map((element) => element * 3);
+    //     let evens = array.filter(element => element >= 100);
+       
+    //     console.log(`3 ge kobeitilgen sandar : ${doubled}`);
+    //     console.log(`100 den ulken sandar: ${evens}`);
+       
+
+
+
+    let numbers = fillArray('San');
+
+    function sumOfNumbers(array){
+    let total = array.reduce((result, element) => result + element, 0);
+    console.log(`Sandar qosyndysy: ${total}`);
+    }
+    sumOfNumbers(numbers);
+    </script>
+</body>
+</html>
